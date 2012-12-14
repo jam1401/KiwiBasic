@@ -22,7 +22,8 @@
 		84E92AFB1677BA6600AEBB8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E92AD51677BA6600AEBB8B /* UIKit.framework */; };
 		84E92AFC1677BA6600AEBB8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E92AD71677BA6600AEBB8B /* Foundation.framework */; };
 		84E92B041677BA6600AEBB8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84E92B021677BA6600AEBB8B /* InfoPlist.strings */; };
-		84E92B071677BA6600AEBB8B /* KiwiBasicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E92B061677BA6600AEBB8B /* KiwiBasicTests.m */; };
+		84E92B251677BF7500AEBB8B /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E92B1C1677BD0300AEBB8B /* libKiwi.a */; };
+		84E92B291677C26400AEBB8B /* KiwiAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E92B281677C26400AEBB8B /* KiwiAppDelegateSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 84E92AD01677BA6600AEBB8B;
 			remoteInfo = KiwiBasic;
+		};
+		84E92B1B1677BD0300AEBB8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E92B101677BD0300AEBB8B /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015B9F11583A77002E9A98;
+			remoteInfo = Kiwi;
+		};
+		84E92B1D1677BD0300AEBB8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E92B101677BD0300AEBB8B /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 832C83C7157263B300F160D5;
+			remoteInfo = "Kiwi-OSX";
+		};
+		84E92B1F1677BD0300AEBB8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E92B101677BD0300AEBB8B /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015C9E11584017002E9A98;
+			remoteInfo = KiwiTests;
+		};
+		84E92B211677BD0300AEBB8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E92B101677BD0300AEBB8B /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A3B16542139967B800E9CC6E;
+			remoteInfo = KiwiExamples;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -56,8 +85,8 @@
 		84E92AF91677BA6600AEBB8B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		84E92B011677BA6600AEBB8B /* KiwiBasicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiwiBasicTests-Info.plist"; sourceTree = "<group>"; };
 		84E92B031677BA6600AEBB8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		84E92B051677BA6600AEBB8B /* KiwiBasicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiwiBasicTests.h; sourceTree = "<group>"; };
-		84E92B061677BA6600AEBB8B /* KiwiBasicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiwiBasicTests.m; sourceTree = "<group>"; };
+		84E92B101677BD0300AEBB8B /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = Frameworks/Kiwi/Kiwi.xcodeproj; sourceTree = "<group>"; };
+		84E92B281677C26400AEBB8B /* KiwiAppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KiwiAppDelegateSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E92B251677BF7500AEBB8B /* libKiwi.a in Frameworks */,
 				84E92AFA1677BA6600AEBB8B /* SenTestingKit.framework in Frameworks */,
 				84E92AFB1677BA6600AEBB8B /* UIKit.framework in Frameworks */,
 				84E92AFC1677BA6600AEBB8B /* Foundation.framework in Frameworks */,
@@ -91,6 +121,7 @@
 				84E92AFF1677BA6600AEBB8B /* KiwiBasicTests */,
 				84E92AD41677BA6600AEBB8B /* Frameworks */,
 				84E92AD21677BA6600AEBB8B /* Products */,
+				84E92B101677BD0300AEBB8B /* Kiwi.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,8 +175,7 @@
 		84E92AFF1677BA6600AEBB8B /* KiwiBasicTests */ = {
 			isa = PBXGroup;
 			children = (
-				84E92B051677BA6600AEBB8B /* KiwiBasicTests.h */,
-				84E92B061677BA6600AEBB8B /* KiwiBasicTests.m */,
+				84E92B281677C26400AEBB8B /* KiwiAppDelegateSpec.m */,
 				84E92B001677BA6600AEBB8B /* Supporting Files */,
 			);
 			path = KiwiBasicTests;
@@ -158,6 +188,17 @@
 				84E92B021677BA6600AEBB8B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84E92B111677BD0300AEBB8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84E92B1C1677BD0300AEBB8B /* libKiwi.a */,
+				84E92B1E1677BD0300AEBB8B /* libKiwi-OSX.a */,
+				84E92B201677BD0300AEBB8B /* KiwiTests.octest */,
+				84E92B221677BD0300AEBB8B /* KiwiExamples.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +260,12 @@
 			mainGroup = 84E92AC61677BA6600AEBB8B;
 			productRefGroup = 84E92AD21677BA6600AEBB8B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 84E92B111677BD0300AEBB8B /* Products */;
+					ProjectRef = 84E92B101677BD0300AEBB8B /* Kiwi.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				84E92AD01677BA6600AEBB8B /* KiwiBasic */,
@@ -226,6 +273,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		84E92B1C1677BD0300AEBB8B /* libKiwi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKiwi.a;
+			remoteRef = 84E92B1B1677BD0300AEBB8B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84E92B1E1677BD0300AEBB8B /* libKiwi-OSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libKiwi-OSX.a";
+			remoteRef = 84E92B1D1677BD0300AEBB8B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84E92B201677BD0300AEBB8B /* KiwiTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiTests.octest;
+			remoteRef = 84E92B1F1677BD0300AEBB8B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84E92B221677BD0300AEBB8B /* KiwiExamples.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiExamples.octest;
+			remoteRef = 84E92B211677BD0300AEBB8B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		84E92ACF1677BA6600AEBB8B /* Resources */ = {
@@ -281,7 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84E92B071677BA6600AEBB8B /* KiwiBasicTests.m in Sources */,
+				84E92B291677C26400AEBB8B /* KiwiAppDelegateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,8 +484,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiwiBasic/KiwiBasic-Prefix.pch";
 				INFOPLIST_FILE = "KiwiBasicTests/KiwiBasicTests-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SOURCE_ROOT)/Frameworks/Kiwi/Kiwi";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -425,6 +505,7 @@
 				INFOPLIST_FILE = "KiwiBasicTests/KiwiBasicTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SOURCE_ROOT)/Frameworks/Kiwi/Kiwi";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -448,6 +529,7 @@
 				84E92B0C1677BA6600AEBB8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84E92B0D1677BA6600AEBB8B /* Build configuration list for PBXNativeTarget "KiwiBasicTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +538,7 @@
 				84E92B0F1677BA6600AEBB8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
